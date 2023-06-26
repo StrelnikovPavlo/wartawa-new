@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <title>Конвертация</title>
+   <meta charset="UTF-8">
+   <meta name="format-detection" content="telephone=no">
+   <!-- <style>body{opacity: 0;}</style> -->
+   <link rel="stylesheet" href="css/style.css">
+   <!-- <meta name="robots" content="noindex, nofollow"> -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+   <div class="wrapper">
+      <div class="preloader">
+         <div class="preloader__bg">
+            <img src="img/icons/preloader/bg.svg" alt="">
+         </div>
+         <div class="preloader__content">
+            <div class="preloader__img">
+               <img src="img/icons/logo.svg" alt="Логотип">
+            </div>
+            <div class="preloader__label">WARTAWA</div>
+         </div>
+      </div>
+      <main class="page">
+         <div class="page__sidebar sidebar-page">
+            <div class="sidebar-page__logo">
+               <a href="#">
+                  <img src="img/icons/logo.svg" alt="Логотип">
+                  <span>WARTAWA</span>
+               </a>
+            </div>
+            <div class="sidebar-page__body">
+               <div class="sidebar-page__status"><span></span>Верифицирован</div>
+               <div data-simplebar class="sidebar-page__inner">
+                  <div class="sidebar-page__menu menu-sidebar">
+                     <a href="#" class="menu-sidebar__item menu-sidebar__item-profil">
+                        <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M12.75 5C12.75 5.99456 12.3549 6.94839 11.6517 7.65165C10.9484 8.35491 9.99457 8.75 9.00001 8.75C8.00545 8.75 7.05162 8.35491 6.34836 7.65165C5.6451 6.94839 5.25001 5.99456 5.25001 5C5.25001 4.00544 5.6451 3.05161 6.34836 2.34835C7.05162 1.64509 8.00545 1.25 9.00001 1.25C9.99457 1.25 10.9484 1.64509 11.6517 2.34835C12.3549 3.05161 12.75 4.00544 12.75 5V5ZM1.50101 19.118C1.53314 17.1504 2.33735 15.2742 3.74018 13.894C5.14302 12.5139 7.0321 11.7405 9.00001 11.7405C10.9679 11.7405 12.857 12.5139 14.2598 13.894C15.6627 15.2742 16.4669 17.1504 16.499 19.118C14.1464 20.1968 11.5882 20.7535 9.00001 20.75C6.32401 20.75 3.78401 20.166 1.50101 19.118Z"
+                              stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span class="menu-sidebar__item-value">Профиль</span>
+                     </a>
+                     <a href="#" class="menu-sidebar__item">
+                        <img src="img/icons/refill.svg" alt="">
+                        <span>Пополнене счёта</span>
+                     </a>
+                     <a href="#" class="menu-sidebar__item">
+                        <img src="img/icons/transaction.svg" alt="">
+                        <span>Перевод средств</span>
+                     </a>
+                     <a href="#" class="menu-sidebar__item">
+                        <img src="img/icons/conversion.svg" alt="">
+                        <span>Конвертация валют</span>
+                     </a>
+                     <a href="#" class="menu-sidebar__item">
+                        <img src="img/icons/Investment.svg" alt="">
+                        <span>Инвестирование</span>
+                     </a>
+                     <a href="#" class="menu-sidebar__item">
+                        <img src="img/icons/history.svg" alt="">
+                        <span>История</span>
+                     </a>
+                  </div>
+                  <div class="sidebar-page__spoller spoller-sidebar">
+                     <div data-spollers class="spoller-sidebar__body">
+                        <div data-spoller class="spoller-sidebar__title _spoller-active">
+                           <span>Фиатные кошельки</span>
+                           <img src="img/icons/spoller-arrow.svg" alt="">
+                        </div>
+                        <div class="spoller-sidebar__content">
+                           <div class="spoller-sidebar__line">
+                              <div class="spoller-sidebar__icon">
+                                 <picture>
+                                    <source srcset="img/counrty/usd.webp" type="image/webp"><img
+                                       src="img/counrty/usd.png" alt="">
+                                 </picture>
+                              </div>
+                              <div class="spoller-sidebar__item">0 USD</div>
+                           </div>
+                           <div class="spoller-sidebar__line">
+                              <div class="spoller-sidebar__icon">
+                                 <picture>
+                                    <source srcset="img/counrty/eur.webp" type="image/webp"><img
+                                       src="img/counrty/eur.png" alt="">
+                                 </picture>
+                              </div>
+                              <div class="spoller-sidebar__item">0 USD</div>
+                           </div>
+                           <div class="spoller-sidebar__line">
+                              <div class="spoller-sidebar__icon">
+                                 <picture>
+                                    <source srcset="img/counrty/gbp.webp" type="image/webp"><img
+                                       src="img/counrty/gbp.png" alt="">
+                                 </picture>
+                              </div>
+                              <div class="spoller-sidebar__item">0 USD</div>
+                           </div>
+                           <div class="spoller-sidebar__line">
+                              <div class="spoller-sidebar__icon">
+                                 <picture>
+                                    <source srcset="img/counrty/aed.webp" type="image/webp"><img
+                                       src="img/counrty/aed.png" alt="">
+                                 </picture>
+                              </div>
+                              <div class="spoller-sidebar__item">0 USD</div>
+                           </div>
+                        </div>
+                        <div data-spollers class="spoller-sidebar__add add-spoller">
+                           <div data-spoller class="add-spoller__header">
+                              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M5.44444 1H3C1.89543 1 1 1.89543 1 3V5.44444" stroke="white" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                 <path d="M5.44444 17H3C1.89543 17 1 16.1046 1 15V12.5556" stroke="white"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                 <path d="M12.5556 17H15C16.1046 17 17 16.1046 17 15V12.5556" stroke="white"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                 <path d="M12.5556 1H15C16.1046 1 17 1.89543 17 3V5.44444" stroke="white"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                 <path d="M12.5554 9L5.44434 9" stroke="white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                 <path d="M9 12.5554L9 5.44434" stroke="white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                              </svg>
+                              <div class="spoller-sidebar__item add-spoller__item">Добавить кошелек</div>
+                           </div>
+                           <div class="add-spoller__body _tabs">
+                              <div class="add-spoller__row">
+                                 <div class="add-spoller__icon">
+                                    <picture>
+                                       <source srcset="img/counrty/try.webp" type="image/webp"><img
+                                          src="img/counrty/try.png" alt="">
+                                    </picture>
+                                 </div>
+                                 <div class="add-spoller__label">TRY</div>
+                                 <div class="add-spoller__chek"></div>
+                              </div>
+                              <div class="add-spoller__row">
+                                 <div class="add-spoller__icon">
+                                    <picture>
+                                       <source srcset="img/counrty/gel.webp" type="image/webp"><img
+                                          src="img/counrty/gel.png" alt="">
+                                    </picture>
+                                 </div>
+                                 <div class="add-spoller__label">GEL</div>
+                                 <div class="add-spoller__chek"></div>
+                              </div>
+                              <div class="add-spoller__row">
+                                 <div class="add-spoller__icon">
+                                    <picture>
+                                       <source srcset="img/counrty/aud.webp" type="image/webp"><img
+                                          src="img/counrty/aud.png" alt="">
+                                    </picture>
+                                 </div>
+                                 <div class="add-spoller__label">AUD</div>
+                                 <div class="add-spoller__chek"></div>
+                              </div>
+                              <div class="add-spoller__row">
+                                 <div class="add-spoller__icon">
+                                    <picture>
+                                       <source srcset="img/counrty/cad.webp" type="image/webp"><img
+                                          src="img/counrty/cad.png" alt="">
+                                    </picture>
+                                 </div>
+                                 <div class="add-spoller__label">CAD</div>
+                                 <div class="add-spoller__chek"></div>
+                              </div>
+                              <div class="add-spoller__row">
+                                 <div class="add-spoller__icon">
+                                    <picture>
+                                       <source srcset="img/counrty/uan.webp" type="image/webp"><img
+                                          src="img/counrty/uan.png" alt="">
+                                    </picture>
+                                 </div>
+                                 <div class="add-spoller__label">UAH</div>
+                                 <div class="add-spoller__chek"></div>
+                              </div>
+                              <a href="#" class="add-spoller__button button">Добавить</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div data-spollers class="spoller-sidebar__body">
+                        <div data-spoller class="spoller-sidebar__title">
+                           <span>Крипто кошельки</span>
+                           <img src="img/icons/spoller-arrow.svg" alt="">
+                        </div>
+                        <div class="spoller-sidebar__content">
+                           <div class="spoller-sidebar__line">
+                              <div class="spoller-sidebar__icon">
+                                 <picture>
+                                    <source srcset="img/counrty/usdt.webp" type="image/webp"><img
+                                       src="img/counrty/usdt.png" alt="">
+                                 </picture>
+                              </div>
+                              <div class="spoller-sidebar__item">0 USD</div>
+                           </div>
+                           <div class="spoller-sidebar__line">
+                              <div class="spoller-sidebar__icon">
+                                 <picture>
+                                    <source srcset="img/counrty/btc.webp" type="image/webp"><img
+                                       src="img/counrty/btc.png" alt="">
+                                 </picture>
+                              </div>
+                              <div class="spoller-sidebar__item">0 USD</div>
+                           </div>
+                        </div>
+                        <div data-spollers class="spoller-sidebar__add add-spoller">
+                           <div data-spoller class="add-spoller__header">
+                              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M5.44444 1H3C1.89543 1 1 1.89543 1 3V5.44444" stroke="white" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                 <path d="M5.44444 17H3C1.89543 17 1 16.1046 1 15V12.5556" stroke="white"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                 <path d="M12.5556 17H15C16.1046 17 17 16.1046 17 15V12.5556" stroke="white"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                 <path d="M12.5556 1H15C16.1046 1 17 1.89543 17 3V5.44444" stroke="white"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                 <path d="M12.5554 9L5.44434 9" stroke="white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                 <path d="M9 12.5554L9 5.44434" stroke="white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                              </svg>
+                              <div class="spoller-sidebar__item add-spoller__item">Добавить кошелек</div>
+                           </div>
+                           <div class="add-spoller__body _tabs">
+                              <div class="add-spoller__row">
+                                 <div class="add-spoller__icon">
+                                    <picture>
+                                       <source srcset="img/counrty/try.webp" type="image/webp"><img
+                                          src="img/counrty/try.png" alt="">
+                                    </picture>
+                                 </div>
+                                 <div class="add-spoller__label">TRY</div>
+                                 <div class="add-spoller__chek"></div>
+                              </div>
+                              <div class="add-spoller__row">
+                                 <div class="add-spoller__icon">
+                                    <picture>
+                                       <source srcset="img/counrty/gel.webp" type="image/webp"><img
+                                          src="img/counrty/gel.png" alt="">
+                                    </picture>
+                                 </div>
+                                 <div class="add-spoller__label">GEL</div>
+                                 <div class="add-spoller__chek"></div>
+                              </div>
+                              <div class="add-spoller__row">
+                                 <div class="add-spoller__icon">
+                                    <picture>
+                                       <source srcset="img/counrty/aud.webp" type="image/webp"><img
+                                          src="img/counrty/aud.png" alt="">
+                                    </picture>
+                                 </div>
+                                 <div class="add-spoller__label">AUD</div>
+                                 <div class="add-spoller__chek"></div>
+                              </div>
+                              <div class="add-spoller__row">
+                                 <div class="add-spoller__icon">
+                                    <picture>
+                                       <source srcset="img/counrty/cad.webp" type="image/webp"><img
+                                          src="img/counrty/cad.png" alt="">
+                                    </picture>
+                                 </div>
+                                 <div class="add-spoller__label">CAD</div>
+                                 <div class="add-spoller__chek"></div>
+                              </div>
+                              <div class="add-spoller__row">
+                                 <div class="add-spoller__icon">
+                                    <picture>
+                                       <source srcset="img/counrty/uan.webp" type="image/webp"><img
+                                          src="img/counrty/uan.png" alt="">
+                                    </picture>
+                                 </div>
+                                 <div class="add-spoller__label">UAH</div>
+                                 <div class="add-spoller__chek"></div>
+                              </div>
+                              <a href="#" class="add-spoller__button button">Добавить</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div data-spollers class="spoller-sidebar__body">
+                        <div data-spoller class="spoller-sidebar__title">
+                           <span>Инвестиционные кошельки</span>
+                           <img src="img/icons/spoller-arrow.svg" alt="">
+                        </div>
+                        <div class="spoller-sidebar__content">
+                           <div class="spoller-sidebar__line">
+                              <div class="spoller-sidebar__icon">
+                                 <picture>
+                                    <source srcset="img/counrty/usd.webp" type="image/webp"><img
+                                       src="img/counrty/usd.png" alt="">
+                                 </picture>
+                              </div>
+                              <div class="spoller-sidebar__item">0 USD</div>
+                           </div>
+                           <div class="spoller-sidebar__line">
+                              <div class="spoller-sidebar__icon">
+                                 <picture>
+                                    <source srcset="img/counrty/eur.webp" type="image/webp"><img
+                                       src="img/counrty/eur.png" alt="">
+                                 </picture>
+                              </div>
+                              <div class="spoller-sidebar__item">0 USD</div>
+                           </div>
+                           <div class="spoller-sidebar__line">
+                              <div class="spoller-sidebar__icon">
+                                 <picture>
+                                    <source srcset="img/counrty/gbp.webp" type="image/webp"><img
+                                       src="img/counrty/gbp.png" alt="">
+                                 </picture>
+                              </div>
+                              <div class="spoller-sidebar__item">0 USD</div>
+                           </div>
+                           <div class="spoller-sidebar__line">
+                              <div class="spoller-sidebar__icon">
+                                 <picture>
+                                    <source srcset="img/counrty/aed.webp" type="image/webp"><img
+                                       src="img/counrty/aed.png" alt="">
+                                 </picture>
+                              </div>
+                              <div class="spoller-sidebar__item">0 USD</div>
+                           </div>
+                        </div>
+                        <div data-spollers class="spoller-sidebar__add add-spoller">
+                           <div data-spoller class="add-spoller__header">
+                              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M5.44444 1H3C1.89543 1 1 1.89543 1 3V5.44444" stroke="white" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                 <path d="M5.44444 17H3C1.89543 17 1 16.1046 1 15V12.5556" stroke="white"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                 <path d="M12.5556 17H15C16.1046 17 17 16.1046 17 15V12.5556" stroke="white"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                 <path d="M12.5556 1H15C16.1046 1 17 1.89543 17 3V5.44444" stroke="white"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                 <path d="M12.5554 9L5.44434 9" stroke="white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                 <path d="M9 12.5554L9 5.44434" stroke="white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                              </svg>
+                              <div class="spoller-sidebar__item add-spoller__item">Добавить кошелек</div>
+                           </div>
+                           <div class="add-spoller__body _tabs">
+                              <div class="add-spoller__row">
+                                 <div class="add-spoller__icon">
+                                    <picture>
+                                       <source srcset="img/counrty/try.webp" type="image/webp"><img
+                                          src="img/counrty/try.png" alt="">
+                                    </picture>
+                                 </div>
+                                 <div class="add-spoller__label">TRY</div>
+                                 <div class="add-spoller__chek"></div>
+                              </div>
+                              <div class="add-spoller__row">
+                                 <div class="add-spoller__icon">
+                                    <picture>
+                                       <source srcset="img/counrty/gel.webp" type="image/webp"><img
+                                          src="img/counrty/gel.png" alt="">
+                                    </picture>
+                                 </div>
+                                 <div class="add-spoller__label">GEL</div>
+                                 <div class="add-spoller__chek"></div>
+                              </div>
+                              <div class="add-spoller__row">
+                                 <div class="add-spoller__icon">
+                                    <picture>
+                                       <source srcset="img/counrty/aud.webp" type="image/webp"><img
+                                          src="img/counrty/aud.png" alt="">
+                                    </picture>
+                                 </div>
+                                 <div class="add-spoller__label">AUD</div>
+                                 <div class="add-spoller__chek"></div>
+                              </div>
+                              <div class="add-spoller__row">
+                                 <div class="add-spoller__icon">
+                                    <picture>
+                                       <source srcset="img/counrty/cad.webp" type="image/webp"><img
+                                          src="img/counrty/cad.png" alt="">
+                                    </picture>
+                                 </div>
+                                 <div class="add-spoller__label">CAD</div>
+                                 <div class="add-spoller__chek"></div>
+                              </div>
+                              <div class="add-spoller__row">
+                                 <div class="add-spoller__icon">
+                                    <picture>
+                                       <source srcset="img/counrty/uan.webp" type="image/webp"><img
+                                          src="img/counrty/uan.png" alt="">
+                                    </picture>
+                                 </div>
+                                 <div class="add-spoller__label">UAH</div>
+                                 <div class="add-spoller__chek"></div>
+                              </div>
+                              <a href="#" class="add-spoller__button button">Добавить</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="page__body body-page">
+            <div class="body-page__head">Конвертация</div>
+            <div class="body-page__header header-page">
+               <div class="header-page__actions">
+                  <div class="header-page__user user-header">
+                     <div class="user-header__body">
+                        <a href="#" class="user-header__photo"><span>BJ</span></a>
+                        <div class="user-header__name _icon-arrow-down">
+                           <span class="user-header__name-item">Boris Johnson</span>
+                        </div>
+                     </div>
+                     <div data-da=".body-page,768,first" class="user-header__menu menu-user menu-user-any">
+                        <button class="menu-user__close">Закрыть меню</button>
+                        <ul class="menu-user__list">
+                           <li><a href="#" class="menu-user__link">
+                                 <img src="img/menu-user/01.svg" alt="">
+                                 <span>Личные данные</span>
+                              </a></li>
+                           <li><a href="#" class="menu-user__link _icon-lang">
+                                 <span>Выбор языка</span>
+                              </a></li>
+                           <li><a href="#" class="menu-user__link">
+                                 <img src="img/menu-user/02.svg" alt="">
+                                 <span>Смена пароля</span>
+                              </a></li>
+                           <li><a href="#" class="menu-user__link">
+                                 <img src="img/menu-user/03.svg" alt="">
+                                 <span>Смена E-mail</span>
+                              </a></li>
+                           <li><a href="#" class="menu-user__link">
+                                 <img src="img/menu-user/04.svg" alt="">
+                                 <span>Смена номер телефона</span>
+                              </a></li>
+                           <li><a href="#" class="menu-user__link">
+                                 <img src="img/menu-user/05.svg" alt="">
+                                 <span>Сохраненные банковские карты</span>
+                              </a></li>
+                           <li><a href="#" class="menu-user__link">
+                                 <img src="img/menu-user/06.svg" alt="">
+                                 <span>Двухэтапная аутенфикация (2FA)</span>
+                              </a></li>
+                        </ul>
+                        <a href="#" class="menu-user__button button">Выход</a>
+                        <a href="#" class="menu-user__item button">Выйти со всех устройств</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="body-page__inner">
+               <div class="body-page__breadcrumbs breadcrumbs-page body-page__breadcrumbs-m">
+                  <ul class="breadcrumbs-page__list">
+                     <li><a href="#" class="breadcrumbs-page__link">Главная</a><span>/</span></li>
+                     <li><a href="#" class="breadcrumbs-page__link _active">Конвертация валют</a><span>/</span></li>
+                  </ul>
+               </div>
+               <div class="repl page-body">
+                  <div class="repl__inner">
+                     <div class="repl__select select-repl">
+                        <h2 class="select-repl__title">Выберите способ для пополнения счета</h2>
+                        <div class="select-repl__content _repls">
+                           <div class="select-repl__item _repls-item _select-cart">
+                              <img src="img/methods/wartawa.svg" alt="">
+                              <div class="select-repl__label">Wartawa</div>
+                           </div>
+                           <div class="select-repl__item _repls-item _select-cart">
+                              <img src="img/methods/02.svg" alt="">
+                              <div class="select-repl__label">Manager Cheque</div>
+                           </div>
+                           <div class="select-repl__item _repls-item _select-cart">
+                              <img src="img/methods/visa.svg" alt="">
+                              <div class="select-repl__label">Visa/MasterCard Int.</div>
+                           </div>
+                           <div class="select-repl__item _repls-item _select-cart">
+                              <img src="img/methods/visa.svg" alt="">
+                              <div class="select-repl__label">Visa/MasterCard Int.</div>
+                           </div>
+                           <div class="select-repl__item _repls-item _select-cart">
+                              <img src="img/methods/maestro.svg" alt="">
+                              <div class="select-repl__label">Maestro RUR</div>
+                           </div>
+                           <div class="select-repl__item _repls-item _select-cart">
+                              <img src="img/methods/mir.svg" alt="">
+                              <div class="select-repl__label">MIR RUR</div>
+                           </div>
+                           <div class="select-repl__item _repls-item _select-cart">
+                              <img src="img/methods/visa.svg" alt="">
+                              <div class="select-repl__label">VIsa/MasterCard UAH</div>
+                           </div>
+                           <div class="select-repl__item _repls-item _select-cart">
+                              <img src="img/methods/visa.svg" alt="">
+                              <div class="select-repl__label">VIsa/MasterCard KZT</div>
+                           </div>
+                           <div class="select-repl__item _repls-item _select-cart">
+                              <img src="img/methods/Sepa.svg" alt="">
+                              <div class="select-repl__label">Sepa</div>
+                           </div>
+                           <div class="select-repl__item _repls-item _select-cart">
+                              <img class="select-repl__country" src="img/counrty/aed.png" alt="">
+                              <div class="select-repl__label">AED bank</div>
+                           </div>
+                           <div class="select-repl__item _repls-item _select-cart">
+                              <img class="select-repl__country" src="img/counrty/try.png" alt="">
+                              <div class="select-repl__label">TRY bank</div>
+                           </div>
+                           <div class="select-repl__item _repls-item _select-swift">
+                              <img src="img/methods/Swift.svg" alt="">
+                              <div class="select-repl__label">Swift USD</div>
+                           </div>
+                           <div class="select-repl__item _repls-item _select-swift">
+                              <img src="img/methods/Swift.svg" alt="">
+                              <div class="select-repl__label">Swift EUR</div>
+                           </div>
+                           <div class="select-repl__item _repls-item _select-crypto">
+                              <img src="img/methods/Payeer.svg" alt="">
+                              <div class="select-repl__label">Payeer</div>
+                           </div>
+                           <div class="select-repl__item _repls-item _select-crypto">
+                              <img src="img/methods/PM.svg" alt="">
+                              <div class="select-repl__label">PM</div>
+                           </div>
+                           <div class="select-repl__item _repls-item _select-crypto">
+                              <img src="img/methods/QIWI.svg" alt="">
+                              <div class="select-repl__label">QIWI</div>
+                           </div>
+                           <div class="select-repl__item _repls-item _select-crypto">
+                              <img src="img/methods/Advcash.svg" alt="">
+                              <div class="select-repl__label">Advcash</div>
+                           </div>
+                           <div class="select-repl__item _repls-item _select-crypto">
+                              <img src="img/method/usdt.png" alt="">
+                              <div class="select-repl__label">USDT</div>
+                           </div>
+                           <div class="select-repl__item _repls-item _select-crypto">
+                              <img src="img/counrty/btc.png" alt="">
+                              <div class="select-repl__label">BTC</div>
+                           </div>
+                           <div class="select-repl__item _repls-item _select-crypto">
+                              <img src="img/counrty/btch.png" alt="">
+                              <div class="select-repl__label">BTCH</div>
+                           </div>
+                           <div class="select-repl__item _repls-item _select-crypto">
+                              <img src="img/counrty/eth.png" alt="">
+                              <div class="select-repl__label">ETH</div>
+                           </div>
+                           <div class="select-repl__item _repls-item _select-crypto">
+                              <img src="img/counrty/ltc.png" alt="">
+                              <div class="select-repl__label">LTC</div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="repl__body">
+                        <div class="repl__block _select-swift-body">
+                           <form action="#" class="repl__payment payment-repl">
+                              <div class="payment-repl__title">Оплата SWIFT USD</div>
+                              <div class="payment-repl__row">
+                                 <div class="payment-repl__input">
+                                    <div class="payment-repl__label">Введите сумму</div>
+                                    <input type="number" name="sum">
+                                 </div>
+                                 <button type="submit" class="payment-repl__button button">Сгенерировать invoice</button>
+                              </div>
+                           </form>
+                           <div class="repl__requisites repl-requisites">
+                              <div class="repl-requisites__title">Реквизиты для SWIFT переводов в USD</div>
+                              <div class="repl-requisites__body">
+                                 <div class="repl-requisites__head">
+                                    <img src="img/methods/Swift.svg" alt="">
+                                    <div class="repl-requisites__caption"><strong>SWIFT USD</strong> - Международные переводы
+                                       из любой точки мира в USD </div>
+                                 </div>
+                                 <div class="repl-requisites__items">
+                                    <div class="repl-requisites__item">
+                                       <div class="repl-requisites__label">Wartawa LTD</div>
+                                       <div class="repl-requisites__value">Наименование получателся</div>
+                                    </div>
+                                    <div class="repl-requisites__item">
+                                       <div class="repl-requisites__label">AE420623810047737XXXXX</div>
+                                       <div class="repl-requisites__value">IBAN</div>
+                                    </div>
+                                    <div class="repl-requisites__item">
+                                       <div class="repl-requisites__label">NBADAEAA</div>
+                                       <div class="repl-requisites__value">Код банка IBIC/SWIFT</div>
+                                    </div>
+                                    <div class="repl-requisites__item">
+                                       <div class="repl-requisites__label">1000 USD</div>
+                                       <div class="repl-requisites__value">Сумма перевода</div>
+                                    </div>
+                                    <div class="repl-requisites__item">
+                                       <div class="repl-requisites__label">WID_21_swift_100_21232387786</div>
+                                       <div class="repl-requisites__value">Пояснение платежа</div>
+                                    </div>
+                                    <div class="repl-requisites__item">
+                                       <div class="repl-requisites__label">Barclays, 1 Churchill Place, Dubai, United Arab
+                                          Emirates, EH14 5HP</div>
+                                       <div class="repl-requisites__value">Адрес банка</div>
+                                    </div>
+                                    <div class="repl-requisites__item">
+                                       <div class="repl-requisites__label">6th Floor, The Tea Building, 56 Shoreditch high
+                                          Street, Dubai, United Arab Emirates</div>
+                                       <div class="repl-requisites__value">Адрес Wartawa</div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <p class="repl-requisites__lead">Сумма перевода должна в точности соответствовать сумме
+                                 выставленного счета иначе платёж не будет зачислен</p>
+                              <p class="repl-requisites__lead">Скачайте подготовленный invoice и следуте инструкции</p>
+                              <a href="#" download class="repl-requisites__button button">Скачать invoice</a>
+                           </div>
+                        </div>
+                        <div class="repl__block _select-cart-body">
+                           <form action="#" class="repl__cart cart-repl">
+                              <div class="cart-repl__title">Оплата картой VISA/MasterCard RUR</div>
+                              <div class="cart-repl__content">
+                                 <div class="cart-repl__grid">
+                                    <div class="cart-repl__input">
+                                       <div class="cart-repl__label">Введите сумму</div>
+                                       <input type="number" name="suma" placeholder="100.00$" class="cart-repl__input">
+                                    </div>
+                                    <div class="cart-repl__input cart-repl__input-clear"></div>
+                                 </div>
+                                 <div class="cart-repl__input">
+                                    <div class="cart-repl__label">Номер карты</div>
+                                    <div class="cart-repl__row">
+                                       <input type="number" name="number_cart" placeholder="XXXX XXXX XXXX XXXX">
+                                       <div class="cart-repl__methods">
+                                          <span><img src="./img/carts/visa.png" alt="visa"></span>
+                                          <span><img src="./img/carts/mastercard.png" alt="mastercard"></span>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="cart-repl__grid">
+                                    <div class="cart-repl__input">
+                                       <div class="cart-repl__label">Срок действия карты (мм/гг)</div>
+                                       <input type="number" name="suma" placeholder="мм / гг" class="cart-repl__input">
+                                    </div>
+                                    <div class="cart-repl__input _cvv">
+                                       <div class="cart-repl__label">CVV / CVC</div>
+                                       <input type="number" name="suma" placeholder="XXX" class="cart-repl__input">
+                                    </div>
+                                 </div>
+                                 <div class="cart-repl__checkbox">
+                                    <input id="a_1" class="cart-repl__checkbox-input" type="checkbox" value="1" name="form[]">
+                                    <label for="a_1" class="cart-repl__checkbox-label"><span class="cart-repl__checkbox-text">Сохранить данные карты</span></label>
+                                 </div>
+                                 <button type="submit" class="cart-repl__button">Оплатить</button>
+                              </div>
+                           </form>
+                        </div>
+                        <div class="repl__block _select-crypto-body">
+                           <form action="#" class="repl__crypto crypto-repl">
+                              <div class="crypto-repl__title">Оплата криптовалютой</div>
+                              <div class="crypto-repl__content">
+                                 <div class="crypto-repl__input">
+                                    <div class="cart-repl__label">Выберите сеть</div>
+                                    <select name="network">
+                                       <option value="1" selected></option>
+                                       <option value="2">Пункт №2</option>
+                                       <option value="3">Пункт №3</option>
+                                       <option value="4">Пункт №4</option>
+                                    </select>
+                                 </div>
+                                 <div class="crypto-repl__row">
+                                    <div class="crypto-repl__qr">
+                                       <img src="./img/new-qr.png" alt="">
+                                    </div>
+                                    <div class="crypto-repl__column">
+                                       <input type="text" name="cod" placeholder="TJDENsfBJs4RFETt1X1W8wMDc8M5XnJhCe">
+                                       <div class="crypto-repl__lead">Внимание! Транзакции Tether USD могут быть осуществлены тольков вашей выбранноей сети. Пополнение USD осуществляется после 10 подтверждений в сети.</div>
+                                    </div>
+                                 </div>
+                                 <button type="submit" class="crypto-repl__button">Оплатить</button>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="navigation">
+            <div class="navigation__body">
+               <a href="#" class="navigation__item icon-menu">
+                  <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path
+                        d="M4.49495 11.7831C4.34106 11.7831 4.2395 11.9431 4.30534 12.0822C4.94081 13.4245 7.51696 18.8607 7.91653 19.6124C8.37294 20.4711 9.13362 20.3196 9.48861 19.4609C9.74533 18.8399 10.2673 17.5055 10.5366 16.8144C10.6023 16.6458 10.8356 16.6333 10.9179 16.7945C11.2758 17.4957 11.9935 18.9079 12.3285 19.6124C12.7849 20.5722 13.5963 20.3196 13.9006 19.6124C14.1382 19.0602 14.3758 18.5388 14.4685 18.3368C14.4942 18.2808 14.4942 18.2164 14.4683 18.1605L11.5734 11.9047C11.5391 11.8306 11.4648 11.7831 11.3831 11.7831H8.9091C8.75467 11.7831 8.65322 11.9443 8.72006 12.0836L9.6525 14.0255C9.67737 14.0773 9.6799 14.137 9.6595 14.1907L9.15913 15.5079C9.09309 15.6818 8.85023 15.69 8.77256 15.521L7.11055 11.9052C7.07634 11.8308 7.00192 11.7831 6.92001 11.7831H4.49495Z"
+                        fill="#00A023" />
+                     <path
+                        d="M23.806 12.8316C23.806 18.8926 18.8926 23.806 12.8316 23.806C6.77059 23.806 1.85718 18.8926 1.85718 12.8316C1.85718 6.77059 6.77059 1.85718 12.8316 1.85718C18.8926 1.85718 23.806 6.77059 23.806 12.8316Z"
+                        stroke="#00A023" stroke-width="1.74752" />
+                     <path
+                        d="M13.4256 16.2568L12.83 16.4593L12.839 16.4858L12.8504 16.5115L13.4256 16.2568ZM19.3672 16.3966L18.8745 16.0053L19.3672 16.3966ZM18.0391 8.25312L18.4839 7.80828L18.0391 8.25312ZM5.93896 8.88045C5.72565 9.15471 5.77506 9.54996 6.04931 9.76327C6.32357 9.97658 6.71882 9.92717 6.93213 9.65292L5.93896 8.88045ZM15.5921 15.0909C15.6045 14.7437 15.3331 14.4521 14.9859 14.4397C14.6387 14.4273 14.3471 14.6988 14.3347 15.046L15.5921 15.0909ZM16.5711 15.2432L17.1829 15.39L17.1829 15.39L16.5711 15.2432ZM15.1172 12.797C14.4084 12.8206 13.6546 13.1791 13.1664 13.8166C12.658 14.4805 12.4705 15.4018 12.83 16.4593L14.0212 16.0542C13.7866 15.3642 13.9311 14.8874 14.1654 14.5815C14.4199 14.2492 14.8195 14.0659 15.1591 14.0545L15.1172 12.797ZM12.8504 16.5115C13.4933 17.9633 14.7518 18.7091 16.1188 18.7251C17.4634 18.7408 18.8538 18.0547 19.8598 16.7878L18.8745 16.0053C18.0765 17.0102 17.0378 17.4775 16.1335 17.467C15.2516 17.4567 14.4414 16.9968 14.0008 16.002L12.8504 16.5115ZM19.8598 16.7878C22.0277 14.0579 21.0144 10.3388 18.4839 7.80828L17.5942 8.69797C19.8868 10.9906 20.4813 13.982 18.8745 16.0053L19.8598 16.7878ZM18.4839 7.80828C17.1169 6.44124 14.7566 5.72417 12.4105 5.8114C10.0468 5.89929 7.55076 6.80813 5.93896 8.88045L6.93213 9.65292C8.25616 7.9506 10.3561 7.14687 12.4573 7.06874C14.5761 6.98996 16.5497 7.65343 17.5942 8.69797L18.4839 7.80828ZM14.3347 15.046C14.32 15.4573 14.464 15.8191 14.7293 16.08C14.9837 16.3302 15.3127 16.4524 15.6251 16.4775C16.2299 16.5262 16.9876 16.2036 17.1829 15.39L15.9594 15.0964C15.9482 15.143 15.9271 15.1676 15.8955 15.1871C15.8555 15.2119 15.7935 15.2288 15.726 15.2234C15.6583 15.2179 15.6225 15.1938 15.6115 15.1829C15.6071 15.1786 15.6038 15.1741 15.6007 15.1661C15.5976 15.158 15.5905 15.1353 15.5921 15.0909L14.3347 15.046ZM17.1829 15.39C17.4708 14.1905 16.6581 12.7457 15.1172 12.797L15.1591 14.0545C15.7153 14.036 16.0909 14.5483 15.9594 15.0964L17.1829 15.39Z"
+                        fill="#00A023" />
+                     <path
+                        d="M15.6974 9.61614C15.1382 9.40644 14.6489 9.61614 14.4042 9.96564C14.1596 10.3151 14.4042 10.4549 14.6139 10.4899C14.8236 10.5248 14.7188 10.7695 14.9984 10.9093C15.278 11.0491 15.4178 10.8394 15.5925 10.9093C15.7673 10.9792 15.9071 11.3637 16.1168 10.9792C16.3265 10.5947 16.2566 9.82584 15.6974 9.61614Z"
+                        fill="#00A023" />
+                  </svg>
+                  <span>Wartawa</span>
+               </a>
+               <a href="#" class="navigation__item">
+                  <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <rect x="7.05615" y="1" width="12" height="22" rx="2" stroke="#004231" stroke-width="2" />
+                     <path d="M15 23C15 20.7909 16.7909 19 19 19" stroke="#004231" stroke-width="2" />
+                     <path d="M15 1C15 3.20914 16.7909 5 19 5" stroke="#004231" stroke-width="2" />
+                     <path d="M11 23C11 20.7909 9.20914 19 7 19" stroke="#004231" stroke-width="2" />
+                     <path d="M11 1C11 3.20914 9.20914 5 7 5" stroke="#004231" stroke-width="2" />
+                     <path
+                        d="M16.736 12C16.736 13.3718 15.2544 14.84 12.936 14.84C10.6175 14.84 9.13599 13.3718 9.13599 12C9.13599 10.6282 10.6175 9.16003 12.936 9.16003C15.2544 9.16003 16.736 10.6282 16.736 12Z"
+                        stroke="#004231" stroke-width="2" />
+                     <path d="M21 16C22.6569 16 24 14.2091 24 12C24 9.79086 22.6569 8 21 8" stroke="#004231"
+                        stroke-width="2" />
+                     <line x1="21" y1="8" x2="20" y2="8" stroke="#004231" stroke-width="2" />
+                     <line x1="6.05615" y1="8.15759" x2="3.23137" y2="8.15759" stroke="#004231" stroke-width="2" />
+                     <line x1="3.80396" y1="6.34463" x2="1.98856" y2="8.16003" stroke="#004231" stroke-width="2"
+                        stroke-linecap="round" />
+                     <line x1="1" y1="-1" x2="3.56736" y2="-1"
+                        transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 3.80396 11.3896)" stroke="#004231"
+                        stroke-width="2" stroke-linecap="round" />
+                     <line x1="21" y1="16" x2="20" y2="16" stroke="#004231" stroke-width="2" />
+                     <line x1="6.05615" y1="15.8564" x2="1" y2="15.8564" stroke="#004231" stroke-width="2" />
+                  </svg>
+                  <span>Перевод</span>
+               </a>
+               <a href="#" class="navigation__add">
+                  <div class="navigation__icon">
+                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                           d="M10.9703 10.9707L18.4557 10.9707C19.0087 10.9707 19.4556 10.5239 19.4556 9.97089C19.4556 9.41794 19.0087 8.97104 18.4557 8.97104L10.9703 8.97104L10.9703 1.48561C10.9703 0.932654 10.5234 0.485763 9.97046 0.485763C9.4175 0.485763 8.97061 0.932654 8.97061 1.48561L8.97061 8.97104L1.48518 8.97104C0.932221 8.97104 0.485328 9.41794 0.485328 9.97089C0.485329 10.2467 0.597052 10.497 0.778071 10.678C0.95909 10.859 1.20941 10.9707 1.48518 10.9707L8.97061 10.9707L8.97061 18.4562C8.97061 18.7319 9.08233 18.9823 9.26335 19.1633C9.44437 19.3443 9.69469 19.456 9.97046 19.456C10.5234 19.456 10.9703 19.0091 10.9703 18.4562L10.9703 10.9707Z"
+                           fill="#004231" />
+                     </svg>
+                  </div>
+                  <span>Пополнение</span>
+               </a>
+               <a href="#" class="navigation__item">
+                  <svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path
+                        d="M15.002 9C15.5543 9 16.002 9.44772 16.002 10C16.002 10.5128 15.616 10.9355 15.1186 10.9933L15.002 11H3.417L6.70911 14.2929C7.0696 14.6534 7.09733 15.2206 6.7923 15.6129L6.70911 15.7071C6.34863 16.0676 5.7814 16.0953 5.38911 15.7903L5.2949 15.7071L0.294898 10.7071C-0.307677 10.1045 0.0743371 9.09282 0.888374 9.00598L1.002 9H15.002ZM14.6129 0.209704L14.7071 0.292893L19.7071 5.29289C20.3097 5.89547 19.9277 6.90718 19.1136 6.99402L19 7H5C4.44772 7 4 6.55228 4 6C4 5.48716 4.38604 5.06449 4.88338 5.00673L5 5H16.585L13.2929 1.70711C12.9324 1.34662 12.9047 0.779392 13.2097 0.387101L13.2929 0.292893C13.6534 -0.0675905 14.2206 -0.0953204 14.6129 0.209704Z"
+                        fill="#004231" />
+                  </svg>
+                  <span>Wartawa</span>
+               </a>
+               <a href="#" class="navigation__item">
+                  <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M1 22H23" stroke="#004231" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                     <rect x="3" y="12" width="3" height="10" stroke="#004231" stroke-width="2"
+                        stroke-linejoin="round" />
+                     <rect x="10.5" y="14" width="3" height="8" stroke="#004231" stroke-width="2"
+                        stroke-linejoin="round" />
+                     <rect x="18" y="8" width="3" height="14" stroke="#004231" stroke-width="2"
+                        stroke-linejoin="round" />
+                     <path
+                        d="M3.53191 7.90503C3.12486 8.2783 3.09746 8.91087 3.47073 9.31792C3.84399 9.72498 4.47657 9.75237 4.88362 9.3791L3.53191 7.90503ZM7.49995 5.62315L8.10687 4.82839C7.72176 4.53431 7.18123 4.55863 6.8241 4.88612L7.49995 5.62315ZM11.922 8.99999L11.3151 9.79475C11.7132 10.0988 12.2749 10.0613 12.6291 9.70709L11.922 8.99999ZM19.9975 2.3387C20.388 1.94817 20.388 1.31501 19.9975 0.924484C19.6069 0.53396 18.9738 0.533961 18.5833 0.924486L19.9975 2.3387ZM4.88362 9.3791L8.17581 6.36019L6.8241 4.88612L3.53191 7.90503L4.88362 9.3791ZM6.89304 6.41792L11.3151 9.79475L12.5289 8.20522L8.10687 4.82839L6.89304 6.41792ZM12.6291 9.70709L19.9975 2.3387L18.5833 0.924486L11.2149 8.29288L12.6291 9.70709Z"
+                        fill="#004231" />
+                  </svg>
+                  <span>Перевод</span>
+               </a>
+            </div>
+         </div>
+      </main>
+   </div>
+   <div id="wallet" aria-hidden="true" class="popup">
+      <div class="popup__wrapper">
+         <div class="popup__content">
+            <button data-close type="button" class="popup__close _icon-close"></button>
+            <div class="popup__body">
+               <div class="popup__heading">Добавить кошелек</div>
+               <div class="popup__items">
+                  <div class="popup__item item-popup">
+                     <div class="item-popup__img">
+                        <picture>
+                           <source srcset="img/counrty/uan.webp" type="image/webp"><img src="img/counrty/uan.png"
+                              alt="">
+                        </picture>
+                     </div>
+                     <div class="item-popup__label">UAH</div>
+                     <div class="item-popup__icon"></div>
+                  </div>
+                  <div class="popup__item item-popup">
+                     <div class="item-popup__img">
+                        <picture>
+                           <source srcset="img/counrty/gel.webp" type="image/webp"><img src="img/counrty/gel.png"
+                              alt="">
+                        </picture>
+                     </div>
+                     <div class="item-popup__label">gel</div>
+                     <div class="item-popup__icon"></div>
+                  </div>
+                  <div class="popup__item item-popup">
+                     <div class="item-popup__img">
+                        <picture>
+                           <source srcset="img/counrty/aud.webp" type="image/webp"><img src="img/counrty/aud.png"
+                              alt="">
+                        </picture>
+                     </div>
+                     <div class="item-popup__label">aud</div>
+                     <div class="item-popup__icon"></div>
+                  </div>
+                  <div class="popup__item item-popup">
+                     <div class="item-popup__img">
+                        <picture>
+                           <source srcset="img/counrty/try.webp" type="image/webp"><img src="img/counrty/try.png"
+                              alt="">
+                        </picture>
+                     </div>
+                     <div class="item-popup__label">try</div>
+                     <div class="item-popup__icon"></div>
+                  </div>
+                  <div class="popup__item item-popup">
+                     <div class="item-popup__img">
+                        <picture>
+                           <source srcset="img/counrty/cad.webp" type="image/webp"><img src="img/counrty/cad.png"
+                              alt="">
+                        </picture>
+                     </div>
+                     <div class="item-popup__label">kzt</div>
+                     <div class="item-popup__icon"></div>
+                  </div>
+                  <div class="popup__item item-popup">
+                     <div class="item-popup__img">
+                        <picture>
+                           <source srcset="img/counrty/kzt.webp" type="image/webp"><img src="img/counrty/kzt.png"
+                              alt="">
+                        </picture>
+                     </div>
+                     <div class="item-popup__label">UAH</div>
+                     <div class="item-popup__icon"></div>
+                  </div>
+               </div>
+               <a href="#" class="popup__button button button-green">Добавить</a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <script src="js/app.js"></script>
+</body>
+
+</html>

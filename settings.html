@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Личные данные(настройки)</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230202222806">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="preloader">
+			<div class="preloader__bg">
+				<img src="img/icons/preloader/bg.svg" alt="">
+			</div>
+			<div class="preloader__content">
+				<div class="preloader__img">
+					<img src="img/icons/logo.svg" alt="Логотип">
+				</div>
+				<div class="preloader__label">WARTAWA</div>
+			</div>
+		</div>
+		<main class="page">
+			<div class="page__sidebar sidebar-page">
+				<div class="sidebar-page__logo">
+					<a href="#">
+						<img src="img/icons/logo.svg" alt="Логотип">
+						<span>WARTAWA</span>
+					</a>
+				</div>
+				<div class="sidebar-page__body">
+					<div class="sidebar-page__status"><span></span>Верифицирован</div>
+					<div data-simplebar class="sidebar-page__inner">
+						<div class="sidebar-page__menu menu-sidebar">
+                     <a href="#" class="menu-sidebar__item menu-sidebar__item-profil">
+                        <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M12.75 5C12.75 5.99456 12.3549 6.94839 11.6517 7.65165C10.9484 8.35491 9.99457 8.75 9.00001 8.75C8.00545 8.75 7.05162 8.35491 6.34836 7.65165C5.6451 6.94839 5.25001 5.99456 5.25001 5C5.25001 4.00544 5.6451 3.05161 6.34836 2.34835C7.05162 1.64509 8.00545 1.25 9.00001 1.25C9.99457 1.25 10.9484 1.64509 11.6517 2.34835C12.3549 3.05161 12.75 4.00544 12.75 5V5ZM1.50101 19.118C1.53314 17.1504 2.33735 15.2742 3.74018 13.894C5.14302 12.5139 7.0321 11.7405 9.00001 11.7405C10.9679 11.7405 12.857 12.5139 14.2598 13.894C15.6627 15.2742 16.4669 17.1504 16.499 19.118C14.1464 20.1968 11.5882 20.7535 9.00001 20.75C6.32401 20.75 3.78401 20.166 1.50101 19.118Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="menu-sidebar__item-value">Профиль</span>
+                     </a>
+							<a href="#" class="menu-sidebar__item">
+								<img src="img/icons/refill.svg" alt="">
+								<span>Пополнене счёта</span>
+							</a>
+							<a href="#" class="menu-sidebar__item">
+								<img src="img/icons/transaction.svg" alt="">
+								<span>Перевод средств</span>
+							</a>
+							<a href="#" class="menu-sidebar__item">
+								<img src="img/icons/conversion.svg" alt="">
+								<span>Конвертация валют</span>
+							</a>
+							<a href="#" class="menu-sidebar__item">
+								<img src="img/icons/Investment.svg" alt="">
+								<span>Инвестирование</span>
+							</a>
+							<a href="#" class="menu-sidebar__item">
+								<img src="img/icons/history.svg" alt="">
+								<span>История</span>
+							</a>
+						</div>
+						<div class="sidebar-page__spoller spoller-sidebar">
+							<div data-spollers class="spoller-sidebar__body">
+								<div data-spoller class="spoller-sidebar__title _spoller-active">
+									<span>Фиатные кошельки</span>
+									<img src="img/icons/spoller-arrow.svg" alt="">
+								</div>
+								<div class="spoller-sidebar__content">
+									<div class="spoller-sidebar__line">
+										<div class="spoller-sidebar__icon">
+											<picture><source srcset="img/counrty/usd.webp" type="image/webp"><img src="img/counrty/usd.png" alt=""></picture>
+										</div>
+										<div class="spoller-sidebar__item">0 USD</div>
+									</div>
+									<div class="spoller-sidebar__line">
+										<div class="spoller-sidebar__icon">
+											<picture><source srcset="img/counrty/eur.webp" type="image/webp"><img src="img/counrty/eur.png" alt=""></picture>
+										</div>
+										<div class="spoller-sidebar__item">0 USD</div>
+									</div>
+									<div class="spoller-sidebar__line">
+										<div class="spoller-sidebar__icon">
+											<picture><source srcset="img/counrty/gbp.webp" type="image/webp"><img src="img/counrty/gbp.png" alt=""></picture>
+										</div>
+										<div class="spoller-sidebar__item">0 USD</div>
+									</div>
+									<div class="spoller-sidebar__line">
+										<div class="spoller-sidebar__icon">
+											<picture><source srcset="img/counrty/aed.webp" type="image/webp"><img src="img/counrty/aed.png" alt=""></picture>
+										</div>
+										<div class="spoller-sidebar__item">0 USD</div>
+									</div>
+								</div>
+								<div data-spollers class="spoller-sidebar__add add-spoller">
+									<div data-spoller class="add-spoller__header">
+										<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5.44444 1H3C1.89543 1 1 1.89543 1 3V5.44444" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M5.44444 17H3C1.89543 17 1 16.1046 1 15V12.5556" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M12.5556 17H15C16.1046 17 17 16.1046 17 15V12.5556" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M12.5556 1H15C16.1046 1 17 1.89543 17 3V5.44444" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M12.5554 9L5.44434 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M9 12.5554L9 5.44434" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+										<div class="spoller-sidebar__item add-spoller__item">Добавить кошелек</div>
+									</div>
+									<div class="add-spoller__body _tabs">
+										<div class="add-spoller__row">
+											<div class="add-spoller__icon">
+												<picture><source srcset="img/counrty/try.webp" type="image/webp"><img src="img/counrty/try.png" alt=""></picture>
+											</div>
+											<div class="add-spoller__label">TRY</div>
+											<div class="add-spoller__chek"></div>
+										</div>
+										<div class="add-spoller__row">
+											<div class="add-spoller__icon">
+												<picture><source srcset="img/counrty/gel.webp" type="image/webp"><img src="img/counrty/gel.png" alt=""></picture>
+											</div>
+											<div class="add-spoller__label">GEL</div>
+											<div class="add-spoller__chek"></div>
+										</div>
+										<div class="add-spoller__row">
+											<div class="add-spoller__icon">
+												<picture><source srcset="img/counrty/aud.webp" type="image/webp"><img src="img/counrty/aud.png" alt=""></picture>
+											</div>
+											<div class="add-spoller__label">AUD</div>
+											<div class="add-spoller__chek"></div>
+										</div>
+										<div class="add-spoller__row">
+											<div class="add-spoller__icon">
+												<picture><source srcset="img/counrty/cad.webp" type="image/webp"><img src="img/counrty/cad.png" alt=""></picture>
+											</div>
+											<div class="add-spoller__label">CAD</div>
+											<div class="add-spoller__chek"></div>
+										</div>
+										<div class="add-spoller__row">
+											<div class="add-spoller__icon">
+												<picture><source srcset="img/counrty/uan.webp" type="image/webp"><img src="img/counrty/uan.png" alt=""></picture>
+											</div>
+											<div class="add-spoller__label">UAH</div>
+											<div class="add-spoller__chek"></div>
+										</div>
+										<a href="#" class="add-spoller__button button">Добавить</a>
+									</div>
+								</div>
+							</div>
+							<div data-spollers class="spoller-sidebar__body">
+								<div data-spoller class="spoller-sidebar__title">
+									<span>Крипто кошельки</span>
+									<img src="img/icons/spoller-arrow.svg" alt="">
+								</div>
+								<div class="spoller-sidebar__content">
+									<div class="spoller-sidebar__line">
+										<div class="spoller-sidebar__icon">
+											<picture><source srcset="img/counrty/usdt.webp" type="image/webp"><img src="img/counrty/usdt.png" alt=""></picture>
+										</div>
+										<div class="spoller-sidebar__item">0 USD</div>
+									</div>
+									<div class="spoller-sidebar__line">
+										<div class="spoller-sidebar__icon">
+											<picture><source srcset="img/counrty/btc.webp" type="image/webp"><img src="img/counrty/btc.png" alt=""></picture>
+										</div>
+										<div class="spoller-sidebar__item">0 USD</div>
+									</div>
+								</div>
+								<div data-spollers class="spoller-sidebar__add add-spoller">
+									<div data-spoller class="add-spoller__header">
+										<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5.44444 1H3C1.89543 1 1 1.89543 1 3V5.44444" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M5.44444 17H3C1.89543 17 1 16.1046 1 15V12.5556" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M12.5556 17H15C16.1046 17 17 16.1046 17 15V12.5556" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M12.5556 1H15C16.1046 1 17 1.89543 17 3V5.44444" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M12.5554 9L5.44434 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M9 12.5554L9 5.44434" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+										<div class="spoller-sidebar__item add-spoller__item">Добавить кошелек</div>
+									</div>
+									<div class="add-spoller__body _tabs">
+										<div class="add-spoller__row">
+											<div class="add-spoller__icon">
+												<picture><source srcset="img/counrty/try.webp" type="image/webp"><img src="img/counrty/try.png" alt=""></picture>
+											</div>
+											<div class="add-spoller__label">TRY</div>
+											<div class="add-spoller__chek"></div>
+										</div>
+										<div class="add-spoller__row">
+											<div class="add-spoller__icon">
+												<picture><source srcset="img/counrty/gel.webp" type="image/webp"><img src="img/counrty/gel.png" alt=""></picture>
+											</div>
+											<div class="add-spoller__label">GEL</div>
+											<div class="add-spoller__chek"></div>
+										</div>
+										<div class="add-spoller__row">
+											<div class="add-spoller__icon">
+												<picture><source srcset="img/counrty/aud.webp" type="image/webp"><img src="img/counrty/aud.png" alt=""></picture>
+											</div>
+											<div class="add-spoller__label">AUD</div>
+											<div class="add-spoller__chek"></div>
+										</div>
+										<div class="add-spoller__row">
+											<div class="add-spoller__icon">
+												<picture><source srcset="img/counrty/cad.webp" type="image/webp"><img src="img/counrty/cad.png" alt=""></picture>
+											</div>
+											<div class="add-spoller__label">CAD</div>
+											<div class="add-spoller__chek"></div>
+										</div>
+										<div class="add-spoller__row">
+											<div class="add-spoller__icon">
+												<picture><source srcset="img/counrty/uan.webp" type="image/webp"><img src="img/counrty/uan.png" alt=""></picture>
+											</div>
+											<div class="add-spoller__label">UAH</div>
+											<div class="add-spoller__chek"></div>
+										</div>
+										<a href="#" class="add-spoller__button button">Добавить</a>
+									</div>
+								</div>
+							</div>
+							<div data-spollers class="spoller-sidebar__body">
+								<div data-spoller class="spoller-sidebar__title">
+									<span>Инвестиционные кошельки</span>
+									<img src="img/icons/spoller-arrow.svg" alt="">
+								</div>
+								<div class="spoller-sidebar__content">
+									<div class="spoller-sidebar__line">
+										<div class="spoller-sidebar__icon">
+											<picture><source srcset="img/counrty/usd.webp" type="image/webp"><img src="img/counrty/usd.png" alt=""></picture>
+										</div>
+										<div class="spoller-sidebar__item">0 USD</div>
+									</div>
+									<div class="spoller-sidebar__line">
+										<div class="spoller-sidebar__icon">
+											<picture><source srcset="img/counrty/eur.webp" type="image/webp"><img src="img/counrty/eur.png" alt=""></picture>
+										</div>
+										<div class="spoller-sidebar__item">0 USD</div>
+									</div>
+									<div class="spoller-sidebar__line">
+										<div class="spoller-sidebar__icon">
+											<picture><source srcset="img/counrty/gbp.webp" type="image/webp"><img src="img/counrty/gbp.png" alt=""></picture>
+										</div>
+										<div class="spoller-sidebar__item">0 USD</div>
+									</div>
+									<div class="spoller-sidebar__line">
+										<div class="spoller-sidebar__icon">
+											<picture><source srcset="img/counrty/aed.webp" type="image/webp"><img src="img/counrty/aed.png" alt=""></picture>
+										</div>
+										<div class="spoller-sidebar__item">0 USD</div>
+									</div>
+								</div>
+								<div data-spollers class="spoller-sidebar__add add-spoller">
+									<div data-spoller class="add-spoller__header">
+										<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5.44444 1H3C1.89543 1 1 1.89543 1 3V5.44444" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M5.44444 17H3C1.89543 17 1 16.1046 1 15V12.5556" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M12.5556 17H15C16.1046 17 17 16.1046 17 15V12.5556" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M12.5556 1H15C16.1046 1 17 1.89543 17 3V5.44444" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M12.5554 9L5.44434 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M9 12.5554L9 5.44434" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+										<div class="spoller-sidebar__item add-spoller__item">Добавить кошелек</div>
+									</div>
+									<div class="add-spoller__body _tabs">
+										<div class="add-spoller__row">
+											<div class="add-spoller__icon">
+												<picture><source srcset="img/counrty/try.webp" type="image/webp"><img src="img/counrty/try.png" alt=""></picture>
+											</div>
+											<div class="add-spoller__label">TRY</div>
+											<div class="add-spoller__chek"></div>
+										</div>
+										<div class="add-spoller__row">
+											<div class="add-spoller__icon">
+												<picture><source srcset="img/counrty/gel.webp" type="image/webp"><img src="img/counrty/gel.png" alt=""></picture>
+											</div>
+											<div class="add-spoller__label">GEL</div>
+											<div class="add-spoller__chek"></div>
+										</div>
+										<div class="add-spoller__row">
+											<div class="add-spoller__icon">
+												<picture><source srcset="img/counrty/aud.webp" type="image/webp"><img src="img/counrty/aud.png" alt=""></picture>
+											</div>
+											<div class="add-spoller__label">AUD</div>
+											<div class="add-spoller__chek"></div>
+										</div>
+										<div class="add-spoller__row">
+											<div class="add-spoller__icon">
+												<picture><source srcset="img/counrty/cad.webp" type="image/webp"><img src="img/counrty/cad.png" alt=""></picture>
+											</div>
+											<div class="add-spoller__label">CAD</div>
+											<div class="add-spoller__chek"></div>
+										</div>
+										<div class="add-spoller__row">
+											<div class="add-spoller__icon">
+												<picture><source srcset="img/counrty/uan.webp" type="image/webp"><img src="img/counrty/uan.png" alt=""></picture>
+											</div>
+											<div class="add-spoller__label">UAH</div>
+											<div class="add-spoller__chek"></div>
+										</div>
+										<a href="#" class="add-spoller__button button">Добавить</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="page__body body-page">
+				<div class="body-page__head">Профиль</div>
+				<div class="body-page__header header-page">
+					<div class="header-page__actions">
+						<div class="header-page__user user-header">
+							<div class="user-header__body">
+								<a href="#" class="user-header__photo"><span>BJ</span></a>
+								<div class="user-header__name _icon-arrow-down">
+									<span class="user-header__name-item">Boris Johnson</span>
+								</div>
+							</div>
+							<div data-da=".body-page,768,first" class="user-header__menu menu-user menu-user-any">
+                        <button class="menu-user__close">Закрыть меню</button>
+								<ul class="menu-user__list">
+									<li><a href="#" class="menu-user__link">
+											<img src="img/menu-user/01.svg" alt="">
+											<span>Личные данные</span>
+										</a></li>
+									<li><a href="#" class="menu-user__link _icon-lang">
+											<span>Выбор языка</span>
+										</a></li>
+									<li><a href="#" class="menu-user__link">
+											<img src="img/menu-user/02.svg" alt="">
+											<span>Смена пароля</span>
+										</a></li>
+									<li><a href="#" class="menu-user__link">
+											<img src="img/menu-user/03.svg" alt="">
+											<span>Смена E-mail</span>
+										</a></li>
+									<li><a href="#" class="menu-user__link">
+											<img src="img/menu-user/04.svg" alt="">
+											<span>Смена номер телефона</span>
+										</a></li>
+									<li><a href="#" class="menu-user__link">
+											<img src="img/menu-user/05.svg" alt="">
+											<span>Сохраненные банковские карты</span>
+										</a></li>
+									<li><a href="#" class="menu-user__link">
+											<img src="img/menu-user/06.svg" alt="">
+											<span>Двухэтапная аутенфикация (2FA)</span>
+										</a></li>
+								</ul>
+								<a href="#" class="menu-user__button button">Выход</a>
+								<a href="#" class="menu-user__item button">Выйти со всех устройств</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="body-page__inner">
+					<div class="body-page__breadcrumbs breadcrumbs-page body-page__breadcrumbs-m">
+						<ul class="breadcrumbs-page__list">
+							<li><a href="#" class="breadcrumbs-page__link">Главная</a><span>/</span></li>
+							<li><a href="#" class="breadcrumbs-page__link">Перевод средств</a><span>/</span></li>
+							<li><a href="#" class="breadcrumbs-page__link _active">2FA</a><span>/</span></li>
+						</ul>
+					</div>
+					<form action="#" class="body-page__settings settings-page">
+						<div class="settings-page__inner">
+							<div class="settings-page__title title-profile">Настройки</div>
+							<div class="settings-page__body">
+								<div data-spollers class="settings-page__spoller">
+									<div class="settings-page__wrap settings-page__wrap-first">
+										<div data-spoller class="settings-page__heading">
+											<div class="settings-page__img">
+												<svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M6.00033 0.833008C7.79283 0.833008 9.25487 2.24788 9.33058 4.02175L9.33366 4.16634V6.16634C10.4382 6.16634 11.3337 7.06177 11.3337 8.16634V12.1663C11.3337 13.2709 10.4382 14.1663 9.33366 14.1663H2.66699C1.56242 14.1663 0.666992 13.2709 0.666992 12.1663V8.16634C0.666992 7.06177 1.56242 6.16634 2.66699 6.16634V4.16634C2.66699 2.32539 4.15938 0.833008 6.00033 0.833008ZM9.33366 7.49967H2.66699C2.2988 7.49967 2.00033 7.79815 2.00033 8.16634V12.1663C2.00033 12.5345 2.2988 12.833 2.66699 12.833H9.33366C9.70185 12.833 10.0003 12.5345 10.0003 12.1663V8.16634C10.0003 7.79815 9.70185 7.49967 9.33366 7.49967ZM6.11784 2.16974L6.00033 2.16634C4.9352 2.16634 4.06455 2.99895 4.00372 4.04883L4.00033 4.16634V6.16634H8.00033V4.16634C8.00033 3.10122 7.16771 2.23057 6.11784 2.16974L6.00033 2.16634L6.11784 2.16974Z" fill="#AAC1BC" />
+												</svg>
+											</div>
+											<span>Двухэтапная аутенфикация (2FA)</span>
+										</div>
+										<div class="settings-page__content">
+											<div class="settings-page__input">
+												<div class="settings-page__label">Введите код 2FA</div>
+												<input type="password" placeholder="*   *   *   *   *   *" class="input input-c input-w">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div data-spollers class="settings-page__spoller">
+									<div class="settings-page__wrap">
+										<div data-spoller class="settings-page__heading">
+											<div class="settings-page__img">
+												<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M0 2.5C0 1.96957 0.210714 1.46086 0.585786 1.08579C0.960859 0.710714 1.46957 0.5 2 0.5H14C14.5304 0.5 15.0391 0.710714 15.4142 1.08579C15.7893 1.46086 16 1.96957 16 2.5V10.5C16 11.0304 15.7893 11.5391 15.4142 11.9142C15.0391 12.2893 14.5304 12.5 14 12.5H2C1.46957 12.5 0.960859 12.2893 0.585786 11.9142C0.210714 11.5391 0 11.0304 0 10.5V2.5ZM2 1.5C1.73478 1.5 1.48043 1.60536 1.29289 1.79289C1.10536 1.98043 1 2.23478 1 2.5V3.5H15V2.5C15 2.23478 14.8946 1.98043 14.7071 1.79289C14.5196 1.60536 14.2652 1.5 14 1.5H2ZM15 5.5H1V10.5C1 10.7652 1.10536 11.0196 1.29289 11.2071C1.48043 11.3946 1.73478 11.5 2 11.5H14C14.2652 11.5 14.5196 11.3946 14.7071 11.2071C14.8946 11.0196 15 10.7652 15 10.5V5.5Z" fill="#00A023" />
+													<path d="M2 8.5C2 8.23478 2.10536 7.98043 2.29289 7.79289C2.48043 7.60536 2.73478 7.5 3 7.5H4C4.26522 7.5 4.51957 7.60536 4.70711 7.79289C4.89464 7.98043 5 8.23478 5 8.5V9.5C5 9.76522 4.89464 10.0196 4.70711 10.2071C4.51957 10.3946 4.26522 10.5 4 10.5H3C2.73478 10.5 2.48043 10.3946 2.29289 10.2071C2.10536 10.0196 2 9.76522 2 9.5V8.5Z" fill="#00A023" />
+												</svg>
+											</div>
+											<span>Сохраненные банковские карты</span>
+										</div>
+										<div class="settings-page__content">
+											<div class="settings-profile__row carts-settings">
+												<div class="carts-settings__block">
+													<div class="carts-settings__row">
+														<div class="carts-settings__icon">
+															<picture><source srcset="img/carts/mastercard.webp" type="image/webp"><img src="img/carts/mastercard.png" alt=""></picture>
+														</div>
+														<div class="carts-settings__name">MasterCard KZT</div>
+														<button class="carts-settings__button button _icon-delete"></button>
+													</div>
+													<div class="carts-settings__number">
+														<span>
+															<img src="img/carts/dots.svg" alt="">
+														</span>
+														<span>
+															<img src="img/carts/dots.svg" alt="">
+														</span>
+														<span>
+															<img src="img/carts/dots.svg" alt="">
+														</span>
+														<span>
+															3571
+														</span>
+													</div>
+												</div>
+												<div class="carts-settings__block">
+													<div class="carts-settings__row">
+														<div class="carts-settings__icon">
+															<picture><source srcset="img/carts/visa.webp" type="image/webp"><img src="img/carts/visa.png" alt=""></picture>
+														</div>
+														<div class="carts-settings__name">Visa KZT</div>
+														<button class="carts-settings__button button _icon-delete"></button>
+													</div>
+													<div class="carts-settings__number">
+														<span>
+															<img src="img/carts/dots.svg" alt="">
+														</span>
+														<span>
+															<img src="img/carts/dots.svg" alt="">
+														</span>
+														<span>
+															<img src="img/carts/dots.svg" alt="">
+														</span>
+														<span>
+															3571
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div data-spollers class="settings-page__spoller">
+									<div class="settings-page__wrap">
+										<div data-spoller class="settings-page__heading">
+											<div class="settings-page__img _icon-lang"></div>
+											<span>Выбор языка</span>
+										</div>
+										<div class="settings-page__content">
+											<div class="settings-page__grid _tabs">
+												<div class="settings-profile-checkbox _tabs-item">
+													<input id="f_1" data-error="Ошибка" class="settings-profile-checkbox__input" type="radio" value="1" name="form[]">
+													<label for="f_1" class="settings-profile-checkbox__label"><span class="settings-profile-checkbox__text">Англиский</span></label>
+												</div>
+												<div class="settings-profile-checkbox _tabs-item">
+													<input id="f_1" data-error="Ошибка" class="settings-profile-checkbox__input" type="radio" value="1" name="form[]">
+													<label for="f_1" class="settings-profile-checkbox__label"><span class="settings-profile-checkbox__text">Французский</span></label>
+												</div>
+												<div class="settings-profile-checkbox _tabs-item _active">
+													<input id="f_1" data-error="Ошибка" class="settings-profile-checkbox__input" type="radio" value="1" name="form[]">
+													<label for="f_1" class="settings-profile-checkbox__label"><span class="settings-profile-checkbox__text">Русский</span></label>
+												</div>
+												<div class="settings-profile-checkbox _tabs-item">
+													<input id="f_1" data-error="Ошибка" class="settings-profile-checkbox__input" type="radio" value="1" name="form[]">
+													<label for="f_1" class="settings-profile-checkbox__label"><span class="settings-profile-checkbox__text">Украинский</span></label>
+												</div>
+												<div class="settings-profile-checkbox _tabs-item">
+													<input id="f_1" data-error="Ошибка" class="settings-profile-checkbox__input" type="radio" value="1" name="form[]">
+													<label for="f_1" class="settings-profile-checkbox__label"><span class="settings-profile-checkbox__text">Немецкий</span></label>
+												</div>
+												<div class="settings-profile-checkbox _tabs-item">
+													<input id="f_1" data-error="Ошибка" class="settings-profile-checkbox__input" type="radio" value="1" name="form[]">
+													<label for="f_1" class="settings-profile-checkbox__label"><span class="settings-profile-checkbox__text">Итальянский</span></label>
+												</div>
+												<div class="settings-profile-checkbox _tabs-item">
+													<input id="f_1" data-error="Ошибка" class="settings-profile-checkbox__input" type="radio" value="1" name="form[]">
+													<label for="f_1" class="settings-profile-checkbox__label"><span class="settings-profile-checkbox__text">Арабский</span></label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div data-spollers class="settings-page__spoller">
+									<div class="settings-page__wrap">
+										<div data-spoller class="settings-page__heading">
+											<div class="settings-page__img">
+												<svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M11.3333 0C12.4379 0 13.3333 0.895431 13.3333 2V8.66667C13.3333 9.77124 12.4379 10.6667 11.3333 10.6667H2C0.89543 10.6667 0 9.77124 0 8.66667V2C0 0.895431 0.89543 0 2 0H11.3333ZM12 2.21867L7.10567 6.50172C6.87526 6.70332 6.5407 6.72012 6.29294 6.55212L6.22766 6.50172L1.33333 2.21933V8.66667C1.33333 9.03486 1.63181 9.33333 2 9.33333H11.3333C11.7015 9.33333 12 9.03486 12 8.66667V2.21867ZM10.9867 1.33333H2.34533L6.66667 5.11415L10.9867 1.33333Z" fill="#00A023" />
+												</svg>
+											</div>
+											<span>Сменить E-mail</span>
+										</div>
+										<div class="settings-page__content">
+											<div class="settings-page__inputs">
+												<div class="settings-page__input">
+													<div class="settings-page__label">Ваш старый E-mail</div>
+													<input type="text" placeholder="b.jonson@gmail.com" class="input input-old">
+												</div>
+												<div class="settings-page__input">
+													<div class="settings-page__label">Введите новый E-mail</div>
+													<input type="text" placeholder="b.jonson@gmail.com" class="input">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div data-spollers class="settings-page__spoller">
+									<div class="settings-page__wrap">
+										<div data-spoller class="settings-page__heading">
+											<div class="settings-page__img">
+												<svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M7.33333 0C8.4379 0 9.33333 0.89543 9.33333 2V11.3333C9.33333 12.4379 8.4379 13.3333 7.33333 13.3333H2C0.89543 13.3333 0 12.4379 0 11.3333V2C0 0.89543 0.89543 0 2 0H7.33333ZM7.33333 1.33333H2C1.63181 1.33333 1.33333 1.63181 1.33333 2V11.3333C1.33333 11.7015 1.63181 12 2 12H7.33333C7.70152 12 8 11.7015 8 11.3333V2C8 1.63181 7.70152 1.33333 7.33333 1.33333ZM4.66667 9.33333C5.03486 9.33333 5.33333 9.63181 5.33333 10C5.33333 10.3682 5.03486 10.6667 4.66667 10.6667C4.29848 10.6667 4 10.3682 4 10C4 9.63181 4.29848 9.33333 4.66667 9.33333Z" fill="#00A023" />
+												</svg>
+											</div>
+											<span>Сменить номер телефона</span>
+										</div>
+										<div class="settings-page__content">
+											<div class="settings-page__inputs">
+												<div class="settings-page__input">
+													<div class="settings-page__label">Ваш старый номер телефона</div>
+													<input type="number" placeholder="+44  12 345 67 89" class="input input-old">
+												</div>
+												<div class="settings-page__input">
+													<div class="settings-page__label">Введите новый номер телефона</div>
+													<input type="number" placeholder="+44  12 345 67 89" class="input">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div data-spollers class="settings-page__spoller">
+									<div class="settings-page__wrap">
+										<div data-spoller class="settings-page__heading">
+											<div class="settings-page__img">
+												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M10.6667 0C10.8435 0 11.013 0.0702379 11.1381 0.195262L13.1381 2.19526C13.2631 2.32029 13.3333 2.48986 13.3333 2.66667V6.66667C13.3333 6.84348 13.2631 7.01305 13.1381 7.13807L11.1381 9.13807C11.013 9.26309 10.8435 9.33333 10.6667 9.33333H7.60948L3.80474 13.1381C3.67971 13.2631 3.51014 13.3333 3.33333 13.3333H0.666667C0.298477 13.3333 0 13.0349 0 12.6667V10C0 9.82319 0.0702379 9.65362 0.195262 9.52859L4 5.72386V2.66667C4 2.48986 4.07024 2.32029 4.19526 2.19526L6.19526 0.195262C6.32029 0.0702379 6.48986 0 6.66667 0H10.6667ZM10.3905 1.33333H6.94281L5.33333 2.94281V6C5.33333 6.17681 5.26309 6.34638 5.13807 6.4714L1.33333 10.2761V12H3.05719L6.86193 8.19526C6.98695 8.07024 7.15652 8 7.33333 8H10.3905L12 6.39052V2.94281L10.3905 1.33333ZM9.33333 2.66667C10.0697 2.66667 10.6667 3.26362 10.6667 4C10.6667 4.73638 10.0697 5.33333 9.33333 5.33333C8.59695 5.33333 8 4.73638 8 4C8 3.26362 8.59695 2.66667 9.33333 2.66667Z" fill="#00A023" />
+												</svg>
+											</div>
+											<span>Смена пароля</span>
+										</div>
+										<div class="settings-page__content">
+											<div class="settings-page__inputs">
+												<div class="settings-page__input">
+													<div class="settings-page__label">Введите Ваш старый пароль</div>
+													<input type="password" placeholder="*   *   *   *   *   *" class="input input-old input-code">
+												</div>
+												<div class="settings-page__input">
+													<div class="settings-page__label">Введите новый номер телефона</div>
+													<input type="password" placeholder="*   *   *   *   *   *" class="input input-code">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<button type="button" class="settings-page__button button btn-yellow">Сохранить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="navigation">
+				<div class="navigation__body">
+					<a href="#" class="navigation__item icon-menu">
+						<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M4.49495 11.7831C4.34106 11.7831 4.2395 11.9431 4.30534 12.0822C4.94081 13.4245 7.51696 18.8607 7.91653 19.6124C8.37294 20.4711 9.13362 20.3196 9.48861 19.4609C9.74533 18.8399 10.2673 17.5055 10.5366 16.8144C10.6023 16.6458 10.8356 16.6333 10.9179 16.7945C11.2758 17.4957 11.9935 18.9079 12.3285 19.6124C12.7849 20.5722 13.5963 20.3196 13.9006 19.6124C14.1382 19.0602 14.3758 18.5388 14.4685 18.3368C14.4942 18.2808 14.4942 18.2164 14.4683 18.1605L11.5734 11.9047C11.5391 11.8306 11.4648 11.7831 11.3831 11.7831H8.9091C8.75467 11.7831 8.65322 11.9443 8.72006 12.0836L9.6525 14.0255C9.67737 14.0773 9.6799 14.137 9.6595 14.1907L9.15913 15.5079C9.09309 15.6818 8.85023 15.69 8.77256 15.521L7.11055 11.9052C7.07634 11.8308 7.00192 11.7831 6.92001 11.7831H4.49495Z" fill="#00A023" />
+							<path d="M23.806 12.8316C23.806 18.8926 18.8926 23.806 12.8316 23.806C6.77059 23.806 1.85718 18.8926 1.85718 12.8316C1.85718 6.77059 6.77059 1.85718 12.8316 1.85718C18.8926 1.85718 23.806 6.77059 23.806 12.8316Z" stroke="#00A023" stroke-width="1.74752" />
+							<path d="M13.4256 16.2568L12.83 16.4593L12.839 16.4858L12.8504 16.5115L13.4256 16.2568ZM19.3672 16.3966L18.8745 16.0053L19.3672 16.3966ZM18.0391 8.25312L18.4839 7.80828L18.0391 8.25312ZM5.93896 8.88045C5.72565 9.15471 5.77506 9.54996 6.04931 9.76327C6.32357 9.97658 6.71882 9.92717 6.93213 9.65292L5.93896 8.88045ZM15.5921 15.0909C15.6045 14.7437 15.3331 14.4521 14.9859 14.4397C14.6387 14.4273 14.3471 14.6988 14.3347 15.046L15.5921 15.0909ZM16.5711 15.2432L17.1829 15.39L17.1829 15.39L16.5711 15.2432ZM15.1172 12.797C14.4084 12.8206 13.6546 13.1791 13.1664 13.8166C12.658 14.4805 12.4705 15.4018 12.83 16.4593L14.0212 16.0542C13.7866 15.3642 13.9311 14.8874 14.1654 14.5815C14.4199 14.2492 14.8195 14.0659 15.1591 14.0545L15.1172 12.797ZM12.8504 16.5115C13.4933 17.9633 14.7518 18.7091 16.1188 18.7251C17.4634 18.7408 18.8538 18.0547 19.8598 16.7878L18.8745 16.0053C18.0765 17.0102 17.0378 17.4775 16.1335 17.467C15.2516 17.4567 14.4414 16.9968 14.0008 16.002L12.8504 16.5115ZM19.8598 16.7878C22.0277 14.0579 21.0144 10.3388 18.4839 7.80828L17.5942 8.69797C19.8868 10.9906 20.4813 13.982 18.8745 16.0053L19.8598 16.7878ZM18.4839 7.80828C17.1169 6.44124 14.7566 5.72417 12.4105 5.8114C10.0468 5.89929 7.55076 6.80813 5.93896 8.88045L6.93213 9.65292C8.25616 7.9506 10.3561 7.14687 12.4573 7.06874C14.5761 6.98996 16.5497 7.65343 17.5942 8.69797L18.4839 7.80828ZM14.3347 15.046C14.32 15.4573 14.464 15.8191 14.7293 16.08C14.9837 16.3302 15.3127 16.4524 15.6251 16.4775C16.2299 16.5262 16.9876 16.2036 17.1829 15.39L15.9594 15.0964C15.9482 15.143 15.9271 15.1676 15.8955 15.1871C15.8555 15.2119 15.7935 15.2288 15.726 15.2234C15.6583 15.2179 15.6225 15.1938 15.6115 15.1829C15.6071 15.1786 15.6038 15.1741 15.6007 15.1661C15.5976 15.158 15.5905 15.1353 15.5921 15.0909L14.3347 15.046ZM17.1829 15.39C17.4708 14.1905 16.6581 12.7457 15.1172 12.797L15.1591 14.0545C15.7153 14.036 16.0909 14.5483 15.9594 15.0964L17.1829 15.39Z" fill="#00A023" />
+							<path d="M15.6974 9.61614C15.1382 9.40644 14.6489 9.61614 14.4042 9.96564C14.1596 10.3151 14.4042 10.4549 14.6139 10.4899C14.8236 10.5248 14.7188 10.7695 14.9984 10.9093C15.278 11.0491 15.4178 10.8394 15.5925 10.9093C15.7673 10.9792 15.9071 11.3637 16.1168 10.9792C16.3265 10.5947 16.2566 9.82584 15.6974 9.61614Z" fill="#00A023" />
+						</svg>
+						<span>Wartawa</span>
+					</a>
+					<a href="#" class="navigation__item">
+						<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect x="7.05615" y="1" width="12" height="22" rx="2" stroke="#004231" stroke-width="2" />
+							<path d="M15 23C15 20.7909 16.7909 19 19 19" stroke="#004231" stroke-width="2" />
+							<path d="M15 1C15 3.20914 16.7909 5 19 5" stroke="#004231" stroke-width="2" />
+							<path d="M11 23C11 20.7909 9.20914 19 7 19" stroke="#004231" stroke-width="2" />
+							<path d="M11 1C11 3.20914 9.20914 5 7 5" stroke="#004231" stroke-width="2" />
+							<path d="M16.736 12C16.736 13.3718 15.2544 14.84 12.936 14.84C10.6175 14.84 9.13599 13.3718 9.13599 12C9.13599 10.6282 10.6175 9.16003 12.936 9.16003C15.2544 9.16003 16.736 10.6282 16.736 12Z" stroke="#004231" stroke-width="2" />
+							<path d="M21 16C22.6569 16 24 14.2091 24 12C24 9.79086 22.6569 8 21 8" stroke="#004231" stroke-width="2" />
+							<line x1="21" y1="8" x2="20" y2="8" stroke="#004231" stroke-width="2" />
+							<line x1="6.05615" y1="8.15759" x2="3.23137" y2="8.15759" stroke="#004231" stroke-width="2" />
+							<line x1="3.80396" y1="6.34463" x2="1.98856" y2="8.16003" stroke="#004231" stroke-width="2" stroke-linecap="round" />
+							<line x1="1" y1="-1" x2="3.56736" y2="-1" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 3.80396 11.3896)" stroke="#004231" stroke-width="2" stroke-linecap="round" />
+							<line x1="21" y1="16" x2="20" y2="16" stroke="#004231" stroke-width="2" />
+							<line x1="6.05615" y1="15.8564" x2="1" y2="15.8564" stroke="#004231" stroke-width="2" />
+						</svg>
+						<span>Перевод</span>
+					</a>
+					<a href="#" class="navigation__add">
+						<div class="navigation__icon">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M10.9703 10.9707L18.4557 10.9707C19.0087 10.9707 19.4556 10.5239 19.4556 9.97089C19.4556 9.41794 19.0087 8.97104 18.4557 8.97104L10.9703 8.97104L10.9703 1.48561C10.9703 0.932654 10.5234 0.485763 9.97046 0.485763C9.4175 0.485763 8.97061 0.932654 8.97061 1.48561L8.97061 8.97104L1.48518 8.97104C0.932221 8.97104 0.485328 9.41794 0.485328 9.97089C0.485329 10.2467 0.597052 10.497 0.778071 10.678C0.95909 10.859 1.20941 10.9707 1.48518 10.9707L8.97061 10.9707L8.97061 18.4562C8.97061 18.7319 9.08233 18.9823 9.26335 19.1633C9.44437 19.3443 9.69469 19.456 9.97046 19.456C10.5234 19.456 10.9703 19.0091 10.9703 18.4562L10.9703 10.9707Z" fill="#004231" />
+							</svg>
+						</div>
+						<span>Пополнение</span>
+					</a>
+					<a href="#" class="navigation__item">
+						<svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M15.002 9C15.5543 9 16.002 9.44772 16.002 10C16.002 10.5128 15.616 10.9355 15.1186 10.9933L15.002 11H3.417L6.70911 14.2929C7.0696 14.6534 7.09733 15.2206 6.7923 15.6129L6.70911 15.7071C6.34863 16.0676 5.7814 16.0953 5.38911 15.7903L5.2949 15.7071L0.294898 10.7071C-0.307677 10.1045 0.0743371 9.09282 0.888374 9.00598L1.002 9H15.002ZM14.6129 0.209704L14.7071 0.292893L19.7071 5.29289C20.3097 5.89547 19.9277 6.90718 19.1136 6.99402L19 7H5C4.44772 7 4 6.55228 4 6C4 5.48716 4.38604 5.06449 4.88338 5.00673L5 5H16.585L13.2929 1.70711C12.9324 1.34662 12.9047 0.779392 13.2097 0.387101L13.2929 0.292893C13.6534 -0.0675905 14.2206 -0.0953204 14.6129 0.209704Z" fill="#004231" />
+						</svg>
+						<span>Wartawa</span>
+					</a>
+					<a href="#" class="navigation__item">
+						<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1 22H23" stroke="#004231" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+							<rect x="3" y="12" width="3" height="10" stroke="#004231" stroke-width="2" stroke-linejoin="round" />
+							<rect x="10.5" y="14" width="3" height="8" stroke="#004231" stroke-width="2" stroke-linejoin="round" />
+							<rect x="18" y="8" width="3" height="14" stroke="#004231" stroke-width="2" stroke-linejoin="round" />
+							<path d="M3.53191 7.90503C3.12486 8.2783 3.09746 8.91087 3.47073 9.31792C3.84399 9.72498 4.47657 9.75237 4.88362 9.3791L3.53191 7.90503ZM7.49995 5.62315L8.10687 4.82839C7.72176 4.53431 7.18123 4.55863 6.8241 4.88612L7.49995 5.62315ZM11.922 8.99999L11.3151 9.79475C11.7132 10.0988 12.2749 10.0613 12.6291 9.70709L11.922 8.99999ZM19.9975 2.3387C20.388 1.94817 20.388 1.31501 19.9975 0.924484C19.6069 0.53396 18.9738 0.533961 18.5833 0.924486L19.9975 2.3387ZM4.88362 9.3791L8.17581 6.36019L6.8241 4.88612L3.53191 7.90503L4.88362 9.3791ZM6.89304 6.41792L11.3151 9.79475L12.5289 8.20522L8.10687 4.82839L6.89304 6.41792ZM12.6291 9.70709L19.9975 2.3387L18.5833 0.924486L11.2149 8.29288L12.6291 9.70709Z" fill="#004231" />
+						</svg>
+						<span>Перевод</span>
+					</a>
+				</div>
+			</div>
+		</main>
+	</div>
+	<div id="wallet" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close _icon-close"></button>
+				<div class="popup__body">
+					<div class="popup__heading">Добавить кошелек</div>
+					<div class="popup__items">
+						<div class="popup__item item-popup">
+							<div class="item-popup__img">
+								<picture><source srcset="img/counrty/uan.webp" type="image/webp"><img src="img/counrty/uan.png" alt=""></picture>
+							</div>
+							<div class="item-popup__label">UAH</div>
+							<div class="item-popup__icon"></div>
+						</div>
+						<div class="popup__item item-popup">
+							<div class="item-popup__img">
+								<picture><source srcset="img/counrty/gel.webp" type="image/webp"><img src="img/counrty/gel.png" alt=""></picture>
+							</div>
+							<div class="item-popup__label">gel</div>
+							<div class="item-popup__icon"></div>
+						</div>
+						<div class="popup__item item-popup">
+							<div class="item-popup__img">
+								<picture><source srcset="img/counrty/aud.webp" type="image/webp"><img src="img/counrty/aud.png" alt=""></picture>
+							</div>
+							<div class="item-popup__label">aud</div>
+							<div class="item-popup__icon"></div>
+						</div>
+						<div class="popup__item item-popup">
+							<div class="item-popup__img">
+								<picture><source srcset="img/counrty/try.webp" type="image/webp"><img src="img/counrty/try.png" alt=""></picture>
+							</div>
+							<div class="item-popup__label">try</div>
+							<div class="item-popup__icon"></div>
+						</div>
+						<div class="popup__item item-popup">
+							<div class="item-popup__img">
+								<picture><source srcset="img/counrty/cad.webp" type="image/webp"><img src="img/counrty/cad.png" alt=""></picture>
+							</div>
+							<div class="item-popup__label">kzt</div>
+							<div class="item-popup__icon"></div>
+						</div>
+						<div class="popup__item item-popup">
+							<div class="item-popup__img">
+								<picture><source srcset="img/counrty/kzt.webp" type="image/webp"><img src="img/counrty/kzt.png" alt=""></picture>
+							</div>
+							<div class="item-popup__label">UAH</div>
+							<div class="item-popup__icon"></div>
+						</div>
+					</div>
+					<a href="#" class="popup__button button button-green">Добавить</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230202222806"></script>
+</body>
+
+</html>
